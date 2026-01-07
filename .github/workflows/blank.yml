@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run a one-line script
-        run: deploiment vers dev
+        run: echo deploiment vers dev
 
 
   deploy-rec:
@@ -26,4 +26,4 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run a one-line script
-        run: deploiment vers rec               
+        run: echo deploiment vers rec               
