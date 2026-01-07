@@ -7,8 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: dev
-      url: ${{ steps.deploy.outputs.url }}
-
+      
     steps:
       - uses: actions/checkout@v4
 
@@ -20,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: rec
-      url: ${{ steps.deploy.outputs.url }}
+    needs: [deploy-dev]
 
     steps:
       - uses: actions/checkout@v4
